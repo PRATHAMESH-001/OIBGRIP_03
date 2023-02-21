@@ -1,0 +1,38 @@
+.head
+        {
+            text-align: center;
+            font-size: 50px;
+            letter-spacing: 9px;
+            background-color: black;
+            color: aliceblue;
+            padding-top: 10px;
+            padding-bottom: 15px;
+
+        }
+        .cel
+        {
+            background-color: gold;
+            height: 250px;
+            text-align: center;
+            padding-top: 1%;
+            font-size: 30px;
+        }
+        .fah
+        {
+            background-color: gold;
+            height: 290px;
+            text-align: center;
+            padding-top: 1%;
+            font-size: 30px;
+        }
+        input
+        {
+            width: 90%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid red;
+            font-size: 30px;
+        }
+        

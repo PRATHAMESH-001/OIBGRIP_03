@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="port.css"/>
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <div class="head">Temperature Converter</div>
+    <div>
+        <p>
+            <div class="cel">
+                <h1>Celsius</h1>
+                <input type="number" id="cels" oninput= "celsiusToFahren()">
+            </div>
+            <div class="fah">
+                <h1>Fahrenheit</h1>
+                <input type="number" id="fahren" oninput = "fahrenToCelsius()">
+            </div>
+        </p>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+        var cel = document.getElementById("cels");
+        var fah = document.getElementById("fahren");
+
+        function celsiusToFahren(){
+            let output = ( parseFloat(cel.value) * 9/5 ) + 32;
+            fahren.value = parseFloat(output.toFixed(2));
+        }
+
+        function fahrenToCelsius(){
+            let output = ( parseFloat(fah.value) - 32) * 5/9;
+            cels.value = parseFloat( output.toFixed(2));
+        }
+
+</script>
